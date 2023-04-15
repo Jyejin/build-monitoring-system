@@ -3,8 +3,8 @@ repoURL: https://github.com/Jyejin/build-monitoring-system
 apps:
   - name: argocd
     namespace: argocd
-    repoURL: https://github.com/argoproj/argo-helm
-    path: charts/argo-cd
+    repoURL: https://github.com/argoproj/argo-cd
+    path: manifests/crds
   - name: nginx
     namespace: default
     repoURL: https://github.com/Jyejin/build-monitoring-system
