@@ -1,5 +1,7 @@
 repoURL: https://github.com/Jyejin/build-monitoring-system
 
 apps:
+  - name: argocd
+    namespace: argocd
   - name: nginx
     namespace: default
