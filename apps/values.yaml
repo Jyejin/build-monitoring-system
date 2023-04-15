@@ -1,5 +1,11 @@
 repoURL: https://github.com/Jyejin/build-monitoring-system
 
 apps:
+  - name: argocd
+    namespace: argocd
+    repoURL: https://github.com/argoproj/argo-helm
+    path: charts/argo-cd
   - name: nginx
     namespace: default
+    repoURL: {{ $.repoURL }}
+    path: nginx
