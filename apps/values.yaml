@@ -7,5 +7,5 @@ apps:
     path: charts/argo-cd
   - name: nginx
     namespace: default
-    repoURL: {{ $.repoURL }}
+    repoURL: https://github.com/Jyejin/build-monitoring-system
     path: nginx
