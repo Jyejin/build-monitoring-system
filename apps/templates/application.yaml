@@ -13,8 +13,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: {{ .path }}
-    repoURL: {{ .repoURL }}
+    path: {{ .name }}
+    repoURL: {{ $.Values.repoURL }}
     targetRevision: HEAD
   {{- if .ignoreDifferences }}
   ignoreDifferences:
