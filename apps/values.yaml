@@ -1,0 +1,5 @@
+repoURL: https://github.com/Jyejin/build-monitoring-system
+
+apps:
+  - name: nginx
+    namespace: default
