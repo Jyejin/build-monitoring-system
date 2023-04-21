@@ -5,3 +5,7 @@ apps:
     namespace: argocd
   - name: nginx
     namespace: default
+  - name: eck-elasticsearch
+    namespace: elastic
+  - name: eck-kibana
+    namespace: elastic
