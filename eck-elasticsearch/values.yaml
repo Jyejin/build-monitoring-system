@@ -86,6 +86,6 @@ nodeSets:
       - name: elasticsearch
         resources:
           requests:
-            cpu: 100m
+            cpu: 1
           limits:
             memory: 1Gi
