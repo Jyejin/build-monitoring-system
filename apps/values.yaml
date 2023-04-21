@@ -5,6 +5,13 @@ apps:
     namespace: argocd
   - name: nginx
     namespace: default
+  - name: eck-operator
+    namespace: elastic
+    ignoreDifferences:
+    - group: admissionregistration.k8s.io
+      kind: ValidatingWebhookConfiguration
+      jqPathExpressions:
+        - .webhooks[]?.clientConfig.caBundle
   - name: eck-elasticsearch
     namespace: elastic
   - name: eck-kibana
