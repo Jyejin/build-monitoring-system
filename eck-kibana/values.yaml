@@ -43,7 +43,7 @@ spec:
     #
     # namespace: default
 
-e  http:
+  http:
     service:
       spec:
         type: LoadBalancer
