@@ -42,3 +42,11 @@ spec:
     # will be assumed.
     #
     # namespace: default
+
+e  http:
+    service:
+      spec:
+        type: LoadBalancer
+    tls:
+      selfSignedCertificate:
+        disabled: true
