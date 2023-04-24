@@ -16,3 +16,5 @@ apps:
     namespace: elastic
   - name: eck-kibana
     namespace: elastic
+  - name: logstash
+    namespace: elastic
