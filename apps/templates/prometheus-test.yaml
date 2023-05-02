@@ -1,0 +1,16 @@
+tapiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kube-prometheus-stack
+  namespace: prometheus
+spec:
+  sources:
+  - repoURL: 'https://prometheus-community.github.io/helm-charts'
+    chart: kube-prometheus-stack
+    targetRevision: 45.23.0
+    helm:
+      valueFiles:
+      - $values/kube-prometheus-stack/values.yaml
+  - repoURL: 'https://github.com/Jyejin/build-monitoring-system.git'
+    targetRevision: HEAD
+    ref: values

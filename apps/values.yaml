@@ -18,5 +18,5 @@ apps:
     namespace: elastic
   - name: eck-beats
     namespace: elastic
-  - name: kube-prometheus-stack
-    namespace: prometheus
+#  - name: kube-prometheus-stack
+#    namespace: prometheus
